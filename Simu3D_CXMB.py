@@ -1,43 +1,15 @@
 #!/usr/bin/env python
-"""This script shows an example of using the PyWavefront module."""
 import os
-# import sys
-# import ctypes
 import math
 import cv2
 from pyglet.gl import *
-from pyglet.window import Window
-from pyglet.window import key
 from OpenGL.GL import *
 import numpy as np
 import pyautogui
 import pyglet
-from PIL import Image, ImageDraw
-import Agent
-# import scipy.misc
-# import pickle
-# import json
-# from sklearn.externals import joblib
-# import pygame as pg
-# import pywavefront
-# from pywavefront import visualization
-# import tkinter
-# from tkinter import messagebox
-from matplotlib import pyplot as plt
-import matplotlib
-# import time
-import csv
-# import shutil
-# import pandas as pd
-# from tabulate import tabulate
+from PIL import Image
 import time
 import random
-import glob
-import csv
-from itertools import zip_longest
-from simple_pid import PID
-from PID_v2 import PID_rom
-from tabulate import tabulate
 import shutil
 
 RNG = np.random.RandomState(2018)
@@ -1261,7 +1233,7 @@ if __name__ == "__main__":
 
     ###########
     ## Name of the results folder to generate
-    name_folder = 'CXMB_EllipsoidBody_FB2.0_MBdoubleMemo_Vin_PosEPG2PFL_InvSteer_test/'
+    name_folder = 'CXMB_EllipsoidBody_FB2.0_MBdoubleMemo_Vin+MB_PosEPG2PFL_InvSteer_test/'
     # name_folder = 'CXMB_EllipsoidBody_Vin+MB_PosEPG2PFL_InvSteer/'
     # name_folder = 'CXMB_EllipsoidBody_FB1.0_FlyEM_Connectomic_shiftR2/'
     ## Check that the end of the folder name is / (Do NOT erase)
@@ -1369,7 +1341,7 @@ if __name__ == "__main__":
         ## Olfactory pathway
         Oin_K = 0.0#np.random.uniform(0.8, 1.2, 1)[0]
         ## Mushroom body Long-term Memory pathway
-        MB_K = 0.0#np.random.uniform(3.5, 4.5, 1)[0]
+        MB_K = np.random.uniform(3.5, 4.5, 1)[0]
 
         ## Record the parameters for each simulation
         filetxt = open(name_folder + "steer_params.txt", "a")
