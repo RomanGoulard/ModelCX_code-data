@@ -1,17 +1,17 @@
 # ModelCX_code-data
 
 Necessary python libraries:
--open-cv2
--OpenGL
--numpy
--joblib
--math
--pyglet
--pyautogui
--PIL
--time
--random
--shutil
+  -open-cv2
+  -OpenGL
+  -numpy
+  -joblib
+  -math
+  -pyglet
+  -pyautogui
+  -PIL
+  -time
+  -random
+  -shutil
 
 
 
